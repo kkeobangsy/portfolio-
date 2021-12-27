@@ -1,12 +1,15 @@
-[class*="col-"] {
-  float: left;
-  padding: 5px;
+*{
+  box-sizing: border-box;
+}
+#comment {
+  margin: 5px 0 0 0;
 }
 body {
   margin: 0;
   padding: 0;
   border: 0;
   width: 100%;
+  height: auto;
 }
 h1 {
   margin: 0;
@@ -38,7 +41,7 @@ li a {
   display: block;
   text-decoration: none;
   text-align: center;
-  margin-left: 28px;
+  margin: 0 0 0 25px;
   border: 0;
   padding: 0;
   font-size: 35px;
@@ -46,45 +49,59 @@ li a {
   color: rgba(232,36,17);
 }
 form {
-  margin: 0 0 0 300px;
+  margin: 0 0 0 0;
+  width: 100%;
+  height: auto;
 }
 label {
-  margin: 90px 0 0 25px;
+  margin: 0;
+  padding: 0;
   background: black;
   color: red;
   font-weight: bold;
+  font-size: 25px;
+  width: 100%;
+  height: auto;
+}
+input {
+  width: 200px;
+  padding: 5px;
+  margin: 5px 0 5px 0;
+}
+img {
+  width: 100%;
+  height: 100%;
 }
 p {
-  margin: 0 0 0 70px;
-  width: 800px;
-  color: black;
+  margin: 0;
+  width: 100%;
+  height: 100%;
   font-weight: bold;
 }
 footer{
-  margin: 0 0 0 600px;
+  margin: auto;
   padding: 0;
   border: 0;
   width: 50%;
 }
 .about {
-  margin: 0 0 0 20px;
+  width: 100%;
+  height: 100%;
+  margin: 0;
 }
 .box {
-  background-image: url("pic/pic2.jpg");
   background-repeat: no-repeat;
-  float: left;
-  width: 800px;
-  height: 405px;
-  margin: 0 0 0 180px;
+  width: 100%;
+  height: auto;
+  margin: 0;
   padding: 0;
   border: 0;
 }
 .box1 {
-  background-image: url("pic/pic1.jpg");
   background-repeat: no-repeat;
-  width: 800px;
-  height: 460px;
-  margin: 40px 0 0 1000px;
+  width: 100%;
+  height: auto;
+  margin: 0;
   padding: 0;
   border: 0;
 }
@@ -96,23 +113,13 @@ footer{
   height: 100%;
   background-color: #80c5de;
 }
-.container_port {
-  margin: 70px 0 0 70px;
-  padding: 0;
-  background: tan;
-  width: 355px;
-  height: 300px;
-  background-size: cover;
-}
 .container1 {
   border: 0;
-  width: 800px;
-  height: 505px;
-  margin: 0 0 0 350px;
+  width: 100%;
+  height: auto;
+  margin: 0 0 0 0;
   padding: 0;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url("pic/pic3.jpg");
+
 }
 .fa {
   padding: 10px;
@@ -141,10 +148,18 @@ footer{
   background: #125688;
   color: white;
 }
+.fa-github {
+  background: #000000;
+  color: white;
+}
 .header {
   margin: 0;
   padding: 0;
   border: 0;
+}
+.me {
+  width: 100%;
+  height: 100%;
 }
 .media {
   margin: 0;
@@ -159,25 +174,25 @@ footer{
   padding: 0;
 }
 .image {
-  width: auto;
-  height: 30px;
+  width: 100%;
+  height: 100%;
 }
 .image_me {
-  margin: 270px 0 0 50px;
+  margin: 0;
   border: 0;
   padding: 0;
-  width: 450px;
-  height: 250px;
-  float: left;
+  width: 100%;
+  height: 100%;
 }
 .image1_me {
-  margin: 0 0 0 1100px;
-  width: 420px;
-  height: 250px
-  float: right;
+  margin: 0;
+  width: 100%;
+  height: 100%;
 }
 .image2_me {
-  margin: 35px 0 0 700px;
+  width: 100%;
+  height: 100%;
+  margin: 0;
 }
 .pic_port {
   background: black;
@@ -186,62 +201,344 @@ footer{
   height: 300px;
 }
 .pic4 {
-  margin: 40px 0 220px 500px;
+  width: 100%;
+  height: 100%;
+  margin: 0 0 0 0;
 }
 .pic5 {
-  width: 50%;
-  margin: 50px 0 0 200px;
+  width: 100%;
+  height: 100%;
+  margin: 0;
   padding: 0;
   position: absolute;
 }
+.picture {
+  width: 100%;
+  height: 100%;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-image: url("pic/pic3.jpg");
+}
 .top {
   border: 0;
-  margin: 0;
+  margin: 0 0 5px 0;
   padding: 0;
 }
-@media only screen and (max-width: 600px) {
-  .nav{
-    width: 100%;
-    height: auto;
-    position: relative;
-    background-color: black;
-  }
-  .media {
-    width: 100%;
-    height: auto;
-    margin: auto;
-    position: relative;
-  }
-  p {
-    width: 100%;
-    height: auto;
-    position: relative;
-    background-color: white;
-  }
+@media (max-width: 480px) {
+    /* For Mobile: */
+    #comment{
+      margin: 5px 0 0 60px;
+    }
+    body{
+      width: auto;
+      height: auto;
+      margin: 0 0 0 0;
+      padding: 0;
+    }
+    ul {
+      background-color: black;
+      width: auto;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    li a {
+      padding: 15px;
+    }
+    label {
+      width: 200px;
+      height: auto;
+      margin: 0 0 0 70px;
+      padding: 0;
+    }
+    input {
+      width: 200px;
+      height: auto;
+      margin: 3px 0 5px 55px;
+      padding: 5px;
+    }
+    footer{
+      width: auto;
+      height: auto;
+      margin: 12px 0 0 40px;
+    }
+    p {
+      color: black;
+      margin: 15px 0 0 35px;
+    }
+    h2 {
+      color: black;
+    }
+    .box {
+      width: 302px;
+      height: 50%;
+      padding: 0;
+      margin: 0;
+    }
+    .box1 {
+      width: 302px;
+      height: 60%;
+      padding: 0;
+      margin: 0;
+    }
+    .container1 {
+      width: 300px;
+      height: 300px;
+    }
+    .image_me {
+      background-size: 400px;
+      opacity: .3;
+      width: 305px;
+      height: 200px;
+    }
+    .image1_me {
+      opacity: .3;
+      width: 305px;
+      height: 100px;
+    }
+    .image2_me {
+      opacity: .3;
+      width: 305px;
+      height: 200px;
+    }
+    .pic4 {
+      width: 253px;
+      height: 315px;
+    }
+    .pic5 {
+      width: 200px;
+      height: 400px;
+      margin: 30px 0 0 15px;
+    }
+    .picture {
+      width: 100%;
+      height: 380px;
+    }
 
 }
-@media only screen and (max-width: 400px){
-  form {
-    width: 100%;
-    margin: 0;
-    height: auto;
-  }
-  .container1 {
-    margin: 0;
-    width: 100%;
-    height: auto;
-    position: relative;
-  }
-  .box {
-    height: auto;
-    width: 100%;
-    position: relative;
-    background-image: url("pic/pic2.jpg");
-  }
-  .pic5 {
-    margin: 60px 0 0 0;
-    padding: 0;
-    border: 0;
+@media (min-width: 481px) and (max-width: 767px){
+    /* For Tablet, Ipad*/
+    #comment {
+      margin: 5px 0 0 285px;
+    }
+    body {
+      width: 100%;
+      height: 100%;
+    }
+    form{
+      margin: 0 0 0 0;
+      width: 100%;
+      height: auto;
+    }
+    footer {
+      width: 50%;
+      height: 50%;
+      margin: 10px 0 0 270px;
+    }
+    label {
+      margin: 0 0 0 300px;
+      width: 100%;
+      height: 100%;
+    }
+    input {
+      margin: 5px 0 5px 280px;
+      padding: 5px;
+      width: 200px;
+      height: 100%;
+    }
+    li a {
+      padding: 5px;
+      margin: 5px;
+      text-align: center;
+    }
+    p {
+      margin: 30px 0 0 320px;
+      width: 340px;
+    }
+    h2 {
+      margin: 0 0 0 0;
+      padding: 10px;
+    }
+    .about {
+      width: 100%;
+      height: 100%;
+    }
+    .box {
+      width: 700px;
+      height: 480px;
+    }
+    .box1 {
+      width: 700px;
+      height: 480px;
+    }
+    .container1 {
+      margin: 0 0 0 0;
+      width: 100%;
+      height: auto;
+    }
+    .image_me {
+      margin: 0 0 0 120px;
+      width: 200px;
+      height: 150px;
+    }
+    .image1_me {
+      width: 200px;
+      height: 150px;
+    }
+    .image2_me {
+      width: 500px;
+      height: 180px;
+      margin: 0 0 0 100px;
+    }
+    .pic4 {
+      background-size: 700px;
+      width: 760px;
+      height: 535px;
+      margin: 0 0 0 0;
+    }
+    .pic5 {
+      width: 100%;
+      height: 500px;
+    }
+    .picture {
+      margin: 0;
+      background-size: 760px;
+      width: 760px;
+      height: 470px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1280px){
+    /*laptops and desktop*/
+    #comment {
+      margin: 5px 0 0 565px;
+    }
+    footer {
+      margin: 10px 0 0 550px;
+    }
+    input {
+      margin: 5px 0 5px 560px;
+    }
+    label {
+      margin: 0 0 0 570px;
+    }
+    p {
+      margin: 40px 0 0 50px;
+      width: 650px;
+      height: 0;
+    }
+    .box {
+      width: 500px;
+      height: 450px;
+      margin: 0 0 0 60px;
+      float: left;
+    }
+    .box1 {
+      width: 530px;
+      height: 450px;
+      margin: 0 0 0 650px;
+    }
+    .container1 {
+      width: 1280px;
+      height: 400px;
+    }
+    .pic1 {
+      height: 450px;
+    }
+    .pic2 {
+      height: 450px;
+    }
+    .pic4 {
+      width: 1300px;
+      height: 520px;
+    }
+    .image_me {
+      margin: 0 0 0 750px;
+      width: 500px;
+      height: 200px;
+    }
+    .image1_me{
+      margin: 0 0 0 5px;
+      width: 500px;
+      height: 200px;
+    }
+    .image2_me{
+      margin: 0 0 0 300px;
+      width: 800px;
+      height: 200px;
+    }
+    .picture{
+      background-size: 1280px;
+      width: 1280px;
+      height: 450px;
+    }
+}
+@media (min-width: 1281px) {
+    /*large screen*/
+    #comment {
+      margin: 5px 0 0 955px;
+    }
+    footer {
+      margin: 5px 0 0 940px;
+    }
+    input {
+      margin: 5px 0 5px 950px;
+    }
+    label {
+      margin: 0 0 0 965px;
+    }
+    h2 {
 
-  }
+    }
+    p {
+      margin: 50px 0 0 50px;
+      width: 700px;
+    }
+    .box {
+      width: 1000px;
+      height: auto;
+      margin: 0 0 0 80px;
+      float: left;
+    }
+    .box1 {
+      width: 1000px;
+      height: auto;
+      margin: 0 0 0 1100px;
+    }
+    .pic1 {
+      width: 900px;
+      height: 600px;
+      padding: 0;
+      margin: 0;
+    }
+    .pic2 {
+      width: 900px;
+      height: 600px;
+      padding: 0;
+      margin: 0;
+     }
+     .pic4 {
+       width: 1650px;
+       height: 550px;
+     }
+     .picture {
+       background-size: 2000px;
+       width: 2000px;
+       height: 510px;
+     }
+     .image_me {
+       margin: 0 0 0 900px;
+       width: 600px;
+       height: 300px;
+     }
+     .image1_me {
+       margin: 0 0 0 20px;
+       width: 700px;
+       height: 300px;
+     }
+     .image2_me {
+       margin: 0 0 0 400px;
+       width: 1000px;
+       height: 300px;
+     }
+
 }
